@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Peter Warwick-Mahoney</title>
+	<atom:link href="http://pwmxx.github.io/tag/align/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pwmxx.github.io/</link>
+	<description>Web Guru, SEO Expert &#38; Generally Digital Marketer Extraordinaire</description>
+	<lastBuildDate>Thu, 21 Mar 2013 10:10:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.2</generator>
+	<item>
+		<title>Double-tagging, or CSS vertical align</title>
+		<link>http://pwmxx.github.io/double-tagging-or-css-vertical-align/</link>
+				<pubDate>Tue, 22 May 2012 17:44:45 +0000</pubDate>
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+				<category><![CDATA[Hints & Tips]]></category>
+		<category><![CDATA[align]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[vertical]]></category>
+
+		<guid isPermaLink="false">http://pwmxx.github.io/?p=60</guid>
+				<description><![CDATA[This is pretty geeky, but I&#8217;ve tried several ways of doing this, and wanted to post what I&#8217;ve found to be the best. And based on testing, it&#8217;s also the most cross-browser compliant solution. The issue is (seemingly) simple. How do you use the equivalent of valign=&#8221;middle&#8221; in CSS? With tables this was pretty simple.<a class="more-link" href="http://pwmxx.github.io/double-tagging-or-css-vertical-align/"> [Continue Reading]</a>]]></description>
+								<content:encoded><![CDATA[<p>This is pretty geeky, but I&#8217;ve tried several ways of doing this, and wanted to post what I&#8217;ve found to be the best. And based on testing, it&#8217;s also the most cross-browser compliant solution.</p>
+<p>The issue is (seemingly) simple. How do you use the equivalent of valign=&#8221;middle&#8221; in CSS? With tables this was pretty simple. But we&#8217;ve all moved on from tables for layout. I hope.</p>
+<p>While CSS (including CSS3) does have a vertical-align, you can&#8217;t use it in the same way for you text-align for example. You can&#8217;t simply tell it that all text within a container should sit halfway down the div.</p>
+<p>The way I&#8217;ve found most useful is to double-tag. That is, to use a parent div, and then a child within it.</p>
+<p>Here&#8217;s the code to show what I mean:<br />
+#content1 {<br />
+display:table;<br />
+height:400px;<br />
+}</p>
+<p>#content2 {<br />
+display:table-cell;<br />
+vertical-align:middle;<br />
+}</p>
+<p>And then when writing the HTML:<br />
+&lt;div id=&#8221;content1&#8243;&gt;<br />
+&lt;div id=&#8221;content2&#8243;&gt;<br />
+This text will sit halfway down the div, regardless of whether I have one line of text, or three.<br />
+&lt;/div&gt;<br />
+&lt;/div&gt;</p>
+<p>In essence the first div says &#8220;Go on, act like I&#8217;m a table&#8221;.  And then second continues, &#8220;And let&#8217;s just say I&#8217;m a table cell. Because cells *can* have vertical-align assigned to them!&#8221;</p>
+<p>Double-tagging.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>
