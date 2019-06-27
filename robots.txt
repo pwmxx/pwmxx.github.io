@@ -7,11 +7,11 @@ Allow: /*.css*
 Allow: /*.js*
 
 User-agent: *
-Disallow: /wp-includes/
-Allow: /wp-includes/js/
-Allow: /wp-content/plugins/
-Allow: /wp-content/themes/
-Allow: /wp-content/cache/
+Disallow: /include/
+Allow: /include/js/
+Allow: /content/plugins/
+Allow: /content/themes/
+Allow: /content/cache/
 Disallow: /xmlrpc.php
 
 Sitemap: https://pwmxx.github.io/sitemap.xml
