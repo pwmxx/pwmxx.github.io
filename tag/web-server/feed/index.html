@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Peter Warwick-Mahoney</title>
+	<atom:link href="http://pwmxx.github.io/tag/web-server/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pwmxx.github.io/</link>
+	<description>Web Guru, SEO Expert &#38; Generally Digital Marketer Extraordinaire</description>
+	<lastBuildDate>Tue, 30 Oct 2012 13:21:04 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.2</generator>
+	<item>
+		<title>Speeding up your site</title>
+		<link>http://pwmxx.github.io/speeding-up-your-site/</link>
+				<pubDate>Tue, 30 Oct 2012 13:18:45 +0000</pubDate>
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+				<category><![CDATA[Search Engine Optimisation (SEO)]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[htaccess]]></category>
+		<category><![CDATA[search engine optimisation]]></category>
+		<category><![CDATA[SEO]]></category>
+		<category><![CDATA[site speed]]></category>
+		<category><![CDATA[web server]]></category>
+
+		<guid isPermaLink="false">http://pwmxx.github.io/?p=143</guid>
+				<description><![CDATA[There is a slew of methods to speed your site up&#8211;which is not only the polite thing to do for your guests&#8211;but helps with Speed Engine Optimisation (SEO) too. Google in particular looks at how quickly your site loads when deciding how to rank your site. Now, if you&#8217;re familiar with web servers then everythign<a class="more-link" href="http://pwmxx.github.io/speeding-up-your-site/"> [Continue Reading]</a>]]></description>
+								<content:encoded><![CDATA[<p>There is a slew of methods to speed your site up&#8211;which is not only the polite thing to do for your guests&#8211;but helps with Speed Engine Optimisation (SEO) too. Google in particular looks at how quickly your site loads when deciding how to rank your site.</p>
+<p>Now, if you&#8217;re familiar with web servers then everythign you need to know is written below. If not, this is the sort of thing you want to have an expert do for you; a faster site is too good an opportunity to pass up.</p>
+<p>Browser caching is a process whereby we&#8217;re able to reduce the number of HTTP requests the server needs to process, which reduced page load times. Your server tells the visitor&#8217;s browser not to look for certain filkes everytime&#8211;usually the file that don&#8217;t change often anyway.</p>
+<p>Edit your .htaccess file for your site, and include this code:</p>
+<p><code>## EXPIRES CACHING ##<br />
+# by Peter Mahoney of peterwm.local<br />
+&lt;IfModule mod_expires.c&gt;<br />
+ExpiresActive On<br />
+ExpiresByType image/jpg "access 1 year"<br />
+ExpiresByType image/jpeg "access 1 year"<br />
+ExpiresByType image/gif "access 1 year"<br />
+ExpiresByType image/png "access 1 year"<br />
+ExpiresByType text/css "access 1 month"<br />
+ExpiresByType application/pdf "access 1 month"<br />
+ExpiresByType text/x-javascript "access 1 month"<br />
+ExpiresByType application/x-shockwave-flash "access 1 month"<br />
+ExpiresByType image/x-icon "access 1 year"<br />
+ExpiresDefault "access 2 days"<br />
+&lt;/IfModule&gt;<br />
+## EXPIRES CACHING ##</code></p>
+<p>Restart your web server, and you&#8217;re done!</p>
+<p>Cache that, baby.</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>
