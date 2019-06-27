@@ -14,4 +14,4 @@ Allow: /wp-content/themes/
 Allow: /wp-content/cache/
 Disallow: /xmlrpc.php
 
-Sitemap: http://pwmxx.github.io/sitemap.xml
+Sitemap: https://pwmxx.github.io/sitemap.xml
