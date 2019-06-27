@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Peter Warwick-Mahoney</title>
+	<atom:link href="http://pwmxx.github.io/tag/whm/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pwmxx.github.io/</link>
+	<description>Web Guru, SEO Expert &#38; Generally Digital Marketer Extraordinaire</description>
+	<lastBuildDate>Mon, 27 Feb 2017 22:22:48 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.2</generator>
+	<item>
+		<title>Moving email between servers</title>
+		<link>http://pwmxx.github.io/moving-email-between-servers/</link>
+				<pubDate>Mon, 27 Feb 2017 22:16:48 +0000</pubDate>
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+				<category><![CDATA[Hints & Tips]]></category>
+		<category><![CDATA[Hosting]]></category>
+		<category><![CDATA[change webhosts]]></category>
+		<category><![CDATA[cpanel]]></category>
+		<category><![CDATA[email]]></category>
+		<category><![CDATA[hosting]]></category>
+		<category><![CDATA[move servers]]></category>
+		<category><![CDATA[server]]></category>
+		<category><![CDATA[whm]]></category>
+
+		<guid isPermaLink="false">http://pwmxx.github.io/?p=1761</guid>
+				<description><![CDATA[There are plenty of reason to move servers for your website, but email is often an afterthought. Even though it&#8217;s something we use hundreds of times a week. Speed issues, cost and possibly (hopefully) needing to upgrade to cope with all your traffic are all excellent reasons to consider a server move. Moving the website<a class="more-link" href="http://pwmxx.github.io/moving-email-between-servers/"> [Continue Reading]</a>]]></description>
+								<content:encoded><![CDATA[<p><img  title="Moving email between servers Peter Mahoney" class="alignnone size-thumbnail wp-image-1762" src="http://pwmxx.github.io/wp-content/uploads/2017/02/move-email-between-servers-600x315.png"  alt="Moving email between servers Peter Mahoney"  width="600" height="315" />There are plenty of reason to move servers for your website, but email is often an afterthought. Even though it&#8217;s something we use hundreds of times a week.</p>
+<p>Speed issues, cost and possibly (hopefully) needing to upgrade to cope with all your traffic are all excellent reasons to consider a server move.</p>
+<p>Moving the website is one thing, files, databases and DNS work all need to be done &#8211; but what about all your emails? Inbox, folder, sent items, drafts. How do you get those across?</p>
+<p>And if you&#8217;re a server admin with full control over them, then this post isn&#8217;t for you. Because you have some clear pathways to move email from the old server to the new one.</p>
+<p>But what about everyone else? The 99% of people who just pay for shared space with an existing hosting company, who just have a web based control panel (like Plesk or cPanel) they log into?</p>
+<p>If that&#8217;s you, prepare for pain. Well, to varying degrees.</p>
+<p>Simply put there&#8217;s never been a decent tool made to move email from server to server.</p>
+<p>If you connect to your email currently via POP, that will mean you&#8217;re downloading your email to you local computer and therefore have a local copy. So losing the email from the existing server wouldn&#8217;t be a problem.</p>
+<p>If you connect via IMAP (and most people do) then all your email is stored on the server, and would be lost. In this case you have 3 courses of action*:</p>
+<ol>
+<li>Be prepared to lose your existing email.</li>
+<li>Change it so you do connect via POP, then have all that email download to your local machine. The downside with this is usually you&#8217;d only end up with the emails on one machine. If you&#8217;re used to checking the same email accounts via perhaps two computers and a mobile, then you&#8217;d lose the option to have old emails on those.</li>
+<li>Get the new server setup and running. Set up the new email address (using IMAP too) and get those all setup on your computer. Then connect to the old email accounts again (you&#8217;ll need to change the server address to the IP address, which is a tad cumbersome). But then the really awful bit comes in, you have to drag the emails from the old accounts to the new &#8211; and because they&#8217;re set up on your local machine it downloads them all then uploads them as it copies them across. Sometimes I can copy a folder at a time, sometimes you need to do emails one at a time &#8211; it depends on the setup of the old server.</li>
+</ol>
+<p>That last one is a horrible job. I&#8217;ve done it on request before, but for an average small office email setup it can easily take a day.</p>
+<p>My preference is to start again. Suck up that there&#8217;s going to be email lost, make sure you have copies of any current message threads and communication, and bite the bullet.</p>
+<p>&nbsp;</p>
+<p>* = If you&#8217;re moving from one type of hosting control panel to another one that&#8217;s the same (for example cPanel to cPanel) &#8211; you have another option fortunately. Again it&#8217;s messy: you need to download your mail folder then recreate all the same email accounts on the new server and upload the mail folder to the same place on that new server. This often falls down though because of permissions issues, or server settings you can&#8217;t control (where mail is stored, etc.)</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>
