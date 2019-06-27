@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Peter Warwick-Mahoney</title>
+	<atom:link href="http://pwmxx.github.io/tag/wifi/feed/" rel="self" type="application/rss+xml" />
+	<link>http://pwmxx.github.io/</link>
+	<description>Web Guru, SEO Expert &#38; Generally Digital Marketer Extraordinaire</description>
+	<lastBuildDate>Sun, 23 Dec 2012 10:38:50 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.2</generator>
+	<item>
+		<title>Issue with wifi caused by BT HomeHub update to software version 4.7.5.1.83.8.94.1.11 (Type A)</title>
+		<link>http://pwmxx.github.io/issue-with-wifi-caused-by-bt-homehub-update-to-software-version-4-7-5-1-83-8-94-1-11-type-a/</link>
+				<comments>http://pwmxx.github.io/issue-with-wifi-caused-by-bt-homehub-update-to-software-version-4-7-5-1-83-8-94-1-11-type-a/#comments</comments>
+				<pubDate>Sun, 23 Dec 2012 10:36:49 +0000</pubDate>
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+				<category><![CDATA[Hints & Tips]]></category>
+		<category><![CDATA[BT]]></category>
+		<category><![CDATA[firmware]]></category>
+		<category><![CDATA[fixed]]></category>
+		<category><![CDATA[issue]]></category>
+		<category><![CDATA[problem]]></category>
+		<category><![CDATA[router]]></category>
+		<category><![CDATA[success]]></category>
+		<category><![CDATA[tested]]></category>
+		<category><![CDATA[wifi]]></category>
+
+		<guid isPermaLink="false">http://pwmxx.github.io/?p=385</guid>
+				<description><![CDATA[I&#8217;ve been having major issues with wifi the past few days, and it turns out they&#8217;re all caused by an update to my router by BT. Now, this post is going to seem pretty nerdy, but this issue may affect more of you than you think! I&#8217;ve spent the past three hours looking into this.<a class="more-link" href="http://pwmxx.github.io/issue-with-wifi-caused-by-bt-homehub-update-to-software-version-4-7-5-1-83-8-94-1-11-type-a/"> [Continue Reading]</a>]]></description>
+								<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-386"  title="Issue with wifi caused by BT HomeHub update to software version 4.7.5.1.83.8.94.1.11 (Type A) Peter Mahoney"  src="http://pwmxx.github.io/wp-content/uploads/2012/12/bt-4.7.5.1.83.8.94.1.11-issue-150x150.png"  alt="Issue with wifi caused by BT HomeHub update to software version 4.7.5.1.83.8.94.1.11 (Type A) Peter Mahoney"  width="150" height="150" />I&#8217;ve been having major issues with wifi the past few days, and it turns out they&#8217;re all caused by an update to my router by BT. Now, this post is going to seem pretty nerdy, but this issue may affect more of you than you think!</p>
+<p>I&#8217;ve spent the past three hours looking into this. You see, I&#8217;ve got a pretty complicated home network, fortunately I&#8217;m skilled in such things so it&#8217;s never been a problem. But it does mean when my wifi became unstable I had a lot of variables to consider and check.</p>
+<p>A few days ago I noticed my internet connections started to drop-out every 40 seconds or so. Whether it was a local connection (one computer at home talking to another) or going out through the internet (searching Google, checking Facebook, downloading files, etc.).</p>
+<p>I didn&#8217;t realise it was a wifi problem until I did some testing, after all every one of my devices connect wirelessly, so it seemed to be a problem affecting everything.</p>
+<p>I ran some tests (pinging various machines and remote servers) and it confirmed what I&#8217;d noticed. After updating and checking everything I could that I&#8217;d set up myself (and extra repeater router, my server, desktop and laptop software) in desperation I checked to see if I could upgrade my BT HomeHub3&#8217;s firmware.</p>
+<p>Oh. BT updated it automatically a few days ago. Precisely when the trouble began. A quick search shows a number of their customers complaining that their wifi has stopped working since the update, FYI it&#8217;s called 4.7.5.1.83.8.94.1.11 (Type A).</p>
+<p>The update &#8220;fixes&#8221; something called Smart Wifi. The solution is to turn it off.</p>
+<p>There is no setting for Smart Wifi on a HomeHub3. In fact it&#8217;s a background process, to turn it off you need to manually select a channel for your wifi to use, instead of the default &#8220;Automatic&#8221; setting.</p>
+<p>Now, I already was using a manual channel: channel 6. Nonetheless I I thought perhaps I need to change a few things to fix the Smart Wifi issue, so I turned it back to automatic, then once again to channel 6. Still the issue.</p>
+<p>A post on BT&#8217;s customer forums alluded that perhaps BT uses channel 6 as a default, so it might not turn off Smart Wifi if I stay on that channel. I can&#8217;t confirm if that&#8217;s true, but I do know when I changed to a different channel (in my case, 11) SUCCESS!</p>
+<p>All my tests show an excellent, stable connection once more.</p>
+<p>I should trust myself and my skills more&#8211;and assumed BT were likely responsible from the outset. They usually are.</p>
+]]></content:encoded>
+							<wfw:commentRss>http://pwmxx.github.io/issue-with-wifi-caused-by-bt-homehub-update-to-software-version-4-7-5-1-83-8-94-1-11-type-a/feed/</wfw:commentRss>
+		<slash:comments>5</slash:comments>
+							</item>
+	</channel>
+</rss>
