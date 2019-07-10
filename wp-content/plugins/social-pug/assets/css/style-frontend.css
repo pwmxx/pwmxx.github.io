@@ -76,7 +76,10 @@
 .dpsp-column-5 .dpsp-networks-btns-wrapper li {width: 20%;}
 .dpsp-column-5.dpsp-has-spacing .dpsp-networks-btns-wrapper li {width: 18.4%;}
 .dpsp-column-5 .dpsp-networks-btns-wrapper li:nth-child(5n) {margin-right: 0;}
-.dpsp-column-2 .dpsp-networks-btns-wrapper .dpsp-network-btn, .dpsp-column-3 .dpsp-networks-btns-wrapper .dpsp-network-btn, .dpsp-column-4 .dpsp-networks-btns-wrapper .dpsp-network-btn {padding-right: 10px;}
+.dpsp-column-6 .dpsp-networks-btns-wrapper li {width: 16.6666%;}
+.dpsp-column-6.dpsp-has-spacing .dpsp-networks-btns-wrapper li {width: 15%;}
+.dpsp-column-6 .dpsp-networks-btns-wrapper li:nth-child(6n) {margin-right: 0;}
+.dpsp-column-2 .dpsp-networks-btns-wrapper .dpsp-network-btn, .dpsp-column-3 .dpsp-networks-btns-wrapper .dpsp-network-btn, .dpsp-column-4 .dpsp-networks-btns-wrapper .dpsp-network-btn, .dpsp-column-5 .dpsp-networks-btns-wrapper .dpsp-network-btn, .dpsp-column-6 .dpsp-networks-btns-wrapper .dpsp-network-btn {padding-right: 10px;}
 .dpsp-no-labels .dpsp-networks-btns-wrapper .dpsp-network-btn {padding: 0;text-align: center;}
 .dpsp-no-labels:not(.dpsp-column-auto) .dpsp-networks-btns-wrapper .dpsp-network-btn:before {position: relative;left: 0;float: none;display: inline-block;}
 .dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-facebook .dpsp-network-icon, .dpsp-networks-btns-wrapper .dpsp-network-btn.dpsp-facebook {border-color: #3a579a;background: #3a579a;color: #3a579a;}
