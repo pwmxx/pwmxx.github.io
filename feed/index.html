@@ -12,7 +12,7 @@
 	<atom:link href="https://peterwm.com/feed/" rel="self" type="application/rss+xml" />
 	<link>https://peterwm.com/</link>
 	<description>Wordpress &#38; SEO Expert</description>
-	<lastBuildDate>Tue, 16 Jul 2019 00:21:12 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 30 Jul 2019 02:50:20 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -20,6 +20,54 @@
 	1	</sy:updateFrequency>
 	<generator>https://wordpress.org/?v=5.2.2</generator>
 	<item>
+		<title>Using WordPress as a static site generator</title>
+		<link>https://peterwm.com/using-wordpress-as-a-static-site-generator/</link>
+				<pubDate>Tue, 30 Jul 2019 02:35:45 +0000</pubDate>
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+				<category><![CDATA[Google]]></category>
+		<category><![CDATA[Hints & Tips]]></category>
+		<category><![CDATA[Search Engine Optimisation (SEO)]]></category>
+		<category><![CDATA[Website Speed]]></category>
+		<category><![CDATA[Wordpress]]></category>
+		<category><![CDATA[search engine optimisation]]></category>
+		<category><![CDATA[SEO]]></category>
+		<category><![CDATA[site speed]]></category>
+		<category><![CDATA[speed]]></category>
+		<category><![CDATA[tips]]></category>
+		<category><![CDATA[website]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<category><![CDATA[wp2static]]></category>
+
+		<guid isPermaLink="false">https://peterwm.com/?p=2033</guid>
+				<description><![CDATA[My WordPress site is so fast, I’m not even sure I can call it WordPress anymore. Static site generators are awesome. They create blindingly fast sites, with very few drawbacks (more on those later). But I’ve been using WordPress since it was a small blogging platform call b2. I’m used to it, I like it,<a class="more-link" href="https://peterwm.com/using-wordpress-as-a-static-site-generator/"> [Continue Reading]</a>]]></description>
+								<content:encoded><![CDATA[<h2>My WordPress site is so fast, I’m not even sure I can call it WordPress anymore.</h2>
+<p><strong>Static site generators are awesome.</strong></p>
+<p>They create blindingly fast sites, with very few drawbacks (more on those later).</p>
+<p>But I’ve been using WordPress since it was a small blogging platform call b2. I’m used to it, I like it, and already have a swag of sites built on it for myself; not just my clients.</p>
+<p>Because <a href="https://peterwm.com/complete-wordpress-seo-overhaul/">I work in SEO</a> speed is really crucial to what I do. I do a lot of caching and optimisation work for people, but wanted to see what would happen if I really pushed the envelope out.</p>
+<p>Initially I was keen to make a front-end that pulled data out of a basic WordPress install using JSON. I set up a proof-of-concept successfully, but wasn’t so keen on remaking all my layouts and front-end design from scratch for it. Besides, basic things like the WordPress menu editor, text widgets etc. are something I very much enjoy using.</p>
+<p>I did some research, and came across a plugin called <a href="https://wordpress.org/plugins/static-html-output-plugin/" target="_blank" rel="noopener noreferrer">WP2Static.</a> It’s a slick plugin that basically does just what I wanted – it packages up WordPress sites as static sites you can deploy anywhere. With a bit of configuring you can actually use it to output to a folder on the same server, and use some basic .htaccess rules so that becomes the public facing side of things.</p>
+<p>Which is cool, but I wanted to go for MAXIMUM SPEED. My end goal was to get the site hosted on GitHub Pages, and then use Cloudflare to CDN it around the world.</p>
+<p>(WP2Static does actually have a system to deploy to GitHub Pages built-in, but I found the deployment process just too slow.)</p>
+<p>So when I considered everything I was trying to achieve, which included keeping the live site on the same URL it was already on, I opted to do the following:</p>
+<ul>
+<li>move the WordPress install of my site off its current server, onto my localhost machine (it’s fast and I back it up regularly)</li>
+<li>use WP2Static to output the site to a local folder</li>
+<li>use git via the terminal to publish the site</li>
+</ul>
+<p>In theory, for a nerd, it seems fairly straightforward. And on the whole it worked much more easily than I anticipated. The main glitches to overcome were that a number of font files weren’t being picked up by the plugin for inclusion in the static site. But it has a configuration option to force it to include certain file paths, so that was easily overcome.</p>
+<p>I did need to create a manual 404.html page (GitHub Pages looks for that in the top directory of a site) but that’s neither here nor there.</p>
+<p>There were a few other tiny things that were really specific to my own WordPress setup – like realising my sitemap.xml file needed to be a flat XML file rather than an index linking to other XML files – because they weren’t going to be wrapped up by the plugin.</p>
+<p>The thing you really lose with any static site system though is (logically) user interaction. In my case that was just forms, but I was happy to replace my contact form with a simple email address – anything else I might need in the future I can do by embedding forms directly from another system like Google Forms.</p>
+<p>I used to sell a couple of SEO packages directly through my site, but Woocommerce was always overkill for that anyway. In the future I’ll just use a combination of Paypal buttons to replicate the same functionality – and in fact it’ll be simpler for the end user because I don’t need to know all their billing address information to start an SEO job with them.</p>
+<p>The really big day-to-day drawback is that clicking ‘Publish’ in WordPress doesn’t publish anything anymore. The process to run a new export with WP2Static and then send it to GitHub Pages takes about two minutes. But considering how often I blog or change anything on the site that’s not a major issue. Like with anything, you need to weigh up the processes, pros and cons against how you actually use something to determine if it’s right for you.</p>
+<p>The site I did all this too, fyi, is the one you’re on right now. This is a static site, hosted for free on GitHub Pages and replicated on servers around the world using Cloudflare.</p>
+<p>Google PageSpeed Insights gives a 99% speed rating for Desktop. And the missing 1% is simply because I include an external file that I can’t set an expiration header for – ironically that file is the script for Google Analytics.</p>
+<p>Pingdom (my preferred speed testing system, because you can choose a server location for the real-world load-time to be tested against – so if your clients are predominantly in London then choose that server to get an idea of the speed as they’ll see it) gives the homepage a 0.212 second loading time. For something ultimately based on WordPress as a content management system, that’s impressive.</p>
+<p><img  title="Using Wordpress as a static site generator Peter Mahoney" class="alignnone size-large wp-image-2034" src="https://peterwm.com/wp-content/uploads/2019/07/google-pagespeed-insights-99-percent-440x276.png"  alt="Using Wordpress as a static site generator Peter Mahoney"  width="440" height="276" srcset="https://peterwm.com/wp-content/uploads/2019/07/google-pagespeed-insights-99-percent-440x276.png 440w, https://peterwm.com/wp-content/uploads/2019/07/google-pagespeed-insights-99-percent-240x150.png 240w, https://peterwm.com/wp-content/uploads/2019/07/google-pagespeed-insights-99-percent-768x481.png 768w, https://peterwm.com/wp-content/uploads/2019/07/google-pagespeed-insights-99-percent.png 983w" sizes="(max-width: 440px) 100vw, 440px" /></p>
+]]></content:encoded>
+										</item>
+		<item>
 		<title>How best to tag your images for SEO on WordPress</title>
 		<link>https://peterwm.com/how-best-to-tag-your-images-for-seo-on-wordpress/</link>
 				<pubDate>Mon, 15 Jul 2019 23:56:44 +0000</pubDate>
@@ -275,41 +323,5 @@
 <p>&nbsp;</p>
 ]]></content:encoded>
 										</item>
-		<item>
-		<title>Nonsecure Collection of Passwords will trigger warnings in Chrome 56</title>
-		<link>https://peterwm.com/nonsecure-collection-of-passwords-will-trigger-warnings-in-chrome-56/</link>
-				<comments>https://peterwm.com/nonsecure-collection-of-passwords-will-trigger-warnings-in-chrome-56/#comments</comments>
-				<pubDate>Wed, 08 Feb 2017 21:38:00 +0000</pubDate>
-		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
-				<category><![CDATA[Google]]></category>
-		<category><![CDATA[News]]></category>
-		<category><![CDATA[Wordpress]]></category>
-		<category><![CDATA[browser]]></category>
-		<category><![CDATA[chrome]]></category>
-		<category><![CDATA[Google update]]></category>
-		<category><![CDATA[https]]></category>
-		<category><![CDATA[secure]]></category>
-
-		<guid isPermaLink="false">https://peterwm.com/?p=1747</guid>
-				<description><![CDATA[Over the past week I&#8217;ve seen more than my fair share of emails from Google regarding &#8220;Nonsecure Collection of Passwords will trigger warnings in Chrome 56&#8243;. It&#8217;s a big change, but not exactly a surprising one. Google has been pushing to make the web more secure for a long time. Seeing HTTPS and green padlocks<a class="more-link" href="https://peterwm.com/nonsecure-collection-of-passwords-will-trigger-warnings-in-chrome-56/"> [Continue Reading]</a>]]></description>
-								<content:encoded><![CDATA[<p><img  title="Nonsecure Collection of Passwords will trigger warnings in Chrome 56 Peter Mahoney" class="alignnone size-thumbnail wp-image-1748" src="https://peterwm.com/wp-content/uploads/2017/02/Nonsecure-Collection-of-Passwords-will-trigger-warnings-in-Chrome-56-600x300.jpg"  alt="Nonsecure Collection of Passwords will trigger warnings in Chrome 56 Peter Mahoney"  width="600" height="300" srcset="https://peterwm.com/wp-content/uploads/2017/02/Nonsecure-Collection-of-Passwords-will-trigger-warnings-in-Chrome-56.jpg 600w, https://peterwm.com/wp-content/uploads/2017/02/Nonsecure-Collection-of-Passwords-will-trigger-warnings-in-Chrome-56-240x120.jpg 240w, https://peterwm.com/wp-content/uploads/2017/02/Nonsecure-Collection-of-Passwords-will-trigger-warnings-in-Chrome-56-440x220.jpg 440w" sizes="(max-width: 600px) 100vw, 600px" /></p>
-<p>Over the past week I&#8217;ve seen more than my fair share of emails from Google regarding &#8220;<span class="il">Nonsecure</span> Collection of Passwords will trigger warnings in Chrome 56&#8243;.</p>
-<p>It&#8217;s a big change, but not exactly a surprising one.</p>
-<p>Google has been pushing to make the web more secure for a long time. Seeing HTTPS and green padlocks all over the web has been a key direction for them &#8211; they&#8217;ve even given secure sites a ranking boost as part of their algorithms. This new change is really an extension of their general SEO ethos.</p>
-<p>So anyone running the latest version of Google&#8217;s Chrome Browser (version 56) will see a warning when browsing any web page that asks for sensitive information. The examples they&#8217;ve given are passwords or credit card details but undoubtedly there&#8217;s other situations a user would be presented with a warning too.</p>
-<p>I&#8217;ve been recommending web owners migrate to HTTPS for a few years, but now it&#8217;s become really important especially if you have any page users can log in through (including I expect WordPress Dashboard login pages like wp-login.php) or e-commerce.</p>
-<p>These things may well be frustrating when they first crop up, requiring immediate changes to your website. But bear in mind Google has been open about their general desires for the web (that it be easy to find useful information, that it be secure, mobile friendly and fast) for a long time. So as long as you apply those same concepts to your own site as soon as you can then changes like this will actually put you ahead of the curve.</p>
-<p>In case you know this impacts you but haven&#8217;t yet had the email from Google about it (or don&#8217;t use Google Search Console in which case you&#8217;d never get one) here is the text of their message:</p>
-<blockquote><p>Nonsecure Collection of Passwords will trigger warnings in Chrome 56 for http://www.domain.com/</p>
-<p>To: owner of http://www.domain.com/</p>
-<p>Beginning in January 2017, Chrome (version 56 and later) will mark pages that collect passwords or credit card details as “Not Secure” unless the pages are served over HTTPS.</p>
-<p>The following URLs include input fields for passwords or credit card details that will trigger the new Chrome warning. Review these examples to see where these warnings will appear, and so you can take action to help protect users’ data. The list is not exhaustive.</p>
-<p>{examples are given here}</p>
-<p>The new warning is the first stage of a long-term plan to mark all pages served over the non-encrypted HTTP protocol as “Not Secure”.</p></blockquote>
-<p>&nbsp;</p>
-]]></content:encoded>
-							<wfw:commentRss>https://peterwm.com/nonsecure-collection-of-passwords-will-trigger-warnings-in-chrome-56/feed/</wfw:commentRss>
-		<slash:comments>2</slash:comments>
-							</item>
 	</channel>
 </rss>
