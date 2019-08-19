@@ -40,7 +40,7 @@ table {border-collapse: collapse;border-spacing: 0;}
 .archive-pagination:before, .clearfix:before, .entry:before, .entry-pagination:before, .footer-widgets:before, .nav-primary:before, .nav-secondary:before, .site-container:before, .site-footer:before, .site-header:before, .site-inner:before, .wrap:before {content: " ";display: table;}
 .archive-pagination:after, .clearfix:after, .entry:after, .entry-pagination:after, .footer-widgets:after, .nav-primary:after, .nav-secondary:after, .site-container:after, .site-footer:after, .site-header:after, .site-inner:after, .wrap:after {clear: both;content: " ";display: table;}
 html {font-size: 62.5%;}
-body {background-color: #000;color: #666;font-family: "Nanum Gothic",Helvetica,Arial,sans-serif;font-display: auto;font-size: 16px;font-size: 1.6rem;font-weight: 300;line-height: 1.625;background-image: url("https://peterwm.com/wp-content/uploads/2012/08/peter-bg.jpg");background-repeat: no-repeat;background-position: right top;background-attachment: fixed;}
+body {background-color: #000;color: #666;font-family: "Nanum Gothic",Helvetica,Arial,sans-serif;font-size: 16px;font-size: 1.6rem;font-weight: 300;line-height: 1.625;background-image: url("https://peterwm.com/wp-content/uploads/2012/08/peter-bg.jpg.webp");background-repeat: no-repeat;background-position: right top;background-attachment: fixed;}
 a, button, input:focus, input[type="button"], input[type="reset"], input[type="submit"], textarea:focus, .button {-webkit-transition: all .1s ease-in-out;-moz-transition: all .1s ease-in-out;-ms-transition: all .1s ease-in-out;-o-transition: all .1s ease-in-out;transition: all .1s ease-in-out;}
 ::-moz-selection {background-color: #424242;color: #fff;}
 ::selection {background-color: #424242;color: #fff;}
