@@ -65,8 +65,14 @@ const render = compose( [
 	withDispatch( ( dispatch ) => ( {
 		onUpdate( hideFeaturedImage ) {
 			const currentMeta = select( 'core/editor' ).getEditedPostAttribute( 'meta' );
+			const genesisMeta = Object.keys( currentMeta )
+				.filter( ( key ) => key.startsWith( '_genesis' ) )
+				.reduce( ( obj, key ) => {
+					obj[ key ] = currentMeta[ key ];
+					return obj;
+				}, {} );
 			const newMeta = {
-				...currentMeta,
+				...genesisMeta,
 				_genesis_hide_singular_image: hideFeaturedImage,
 			};
 			dispatch( 'core/editor' ).editPost( { meta: newMeta } );

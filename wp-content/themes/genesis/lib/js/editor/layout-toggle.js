@@ -79,8 +79,14 @@ const render = compose( [
 	withDispatch( ( dispatch ) => ( {
 		onChange( layout ) {
 			const currentMeta = select( 'core/editor' ).getEditedPostAttribute( 'meta' );
+			const genesisMeta = Object.keys( currentMeta )
+				.filter( ( key ) => key.startsWith( '_genesis' ) )
+				.reduce( ( obj, key ) => {
+					obj[ key ] = currentMeta[ key ];
+					return obj;
+				}, {} );
 			const newMeta = {
-				...currentMeta,
+				...genesisMeta,
 				_genesis_layout: layout,
 			};
 			dispatch( 'core/editor' ).editPost( { meta: newMeta } );
