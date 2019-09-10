@@ -60,7 +60,7 @@ cite {font-style: normal;}
 h1, h2, h3, h4, h5, h6 {color: #333;font-family: "Abril Fatface","Helvetica Neue",Helvetica,Arial,sans-serif;font-display: auto;font-weight: 400;line-height: 1.2;margin: 0 0 16px;margin: 0 0 1.6rem;}
 h1 {font-size: 48px;font-size: 4.8rem;}
 h2 {font-size: 30px;font-size: 3rem;}
-h3 {font-size: 24px;font-size: 2.4rem;}
+h3, .sc_card h3 {font-size: 24px;font-size: 2.4rem;font-weight: 400;}
 h4 {font-size: 32px;font-size: 3.2rem;}
 h5 {font-size: 18px;font-size: 1.8rem;}
 h6 {font-size: 16px;font-size: 1.6rem;}
