@@ -134,12 +134,13 @@ img.alignright, .wp-caption.alignright {margin: 0 0 24px 24px;margin: 0 0 2.4rem
 .featured-content .entry {border-bottom: 2px solid #f5f5f5;margin-bottom: 20px;margin-bottom: 2rem;}
 .featured-content .entry-title {border: none;font-size: 36px;font-size: 3.6rem;line-height: 1.2;}
 .featured-content .entry-title a {border: none;}
-.enews-widget {color: #999;}
-.enews-widget .widget-title {color: #fff;}
-.enews-widget input {margin-bottom: 16px;margin-bottom: 1.6rem;}
-.enews-widget input:focus {border: 1px solid #ddd;}
-.enews-widget input[type="submit"] {background-color: #f00;color: #fff;margin: 0;width: 100%;}
-.enews-widget input:hover[type="submit"] {background-color: #fff;color: #424242;}
+.widget_mc4wp_form_widget {color: #999;}
+.widget_mc4wp_form_widget {background-color: #424242 !important;}
+.widget_mc4wp_form_widget .widget-title {color: #fff;}
+.widget_mc4wp_form_widget input {margin-bottom: 16px;margin-bottom: 1.6rem;}
+.widget_mc4wp_form_widget input:focus {border: 1px solid #ddd;}
+.widget_mc4wp_form_widget input[type="submit"] {background-color: #f00;color: #fff;margin: 0;width: 100%;}
+.widget_mc4wp_form_widget input:hover[type="submit"] {background-color: #fff;color: #424242;}
 .latest-tweets ul li {margin-bottom: 16px;margin-bottom: 1.6rem;}
 div.gform_wrapper input[type="email"], div.gform_wrapper input[type="text"], div.gform_wrapper textarea, div.gform_wrapper .ginput_complex label {font-size: 16px;font-size: 1.6rem;padding: 16px;padding: 1.6rem;}
 div.gform_wrapper .ginput_complex label {padding: 0;}
