@@ -66,6 +66,7 @@ h5 {font-size: 18px;font-size: 1.8rem;}
 h6 {font-size: 16px;font-size: 1.6rem;}
 embed, iframe, img, object, video, .wp-caption {max-width: 100%;}
 img {height: auto;width: auto;}
+input {margin-bottom: 1em;}
 input, select, textarea {background-color: #fff;border: 1px solid #ddd;border-radius: 3px;box-shadow: 1px 1px 3px #eee inset;color: #999;font-size: 14px;font-size: 1.4rem;padding: 16px;padding: 1.6rem;width: 100%;}
 input:focus, textarea:focus {border: 1px solid #999;outline: none;}
 ::-moz-placeholder {color: #999;opacity: 1;}
