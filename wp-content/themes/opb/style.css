@@ -40,11 +40,11 @@ table {border-collapse: collapse;border-spacing: 0;}
 .archive-pagination:before, .clearfix:before, .entry:before, .entry-pagination:before, .footer-widgets:before, .nav-primary:before, .nav-secondary:before, .site-container:before, .site-footer:before, .site-header:before, .site-inner:before, .wrap:before {content: " ";display: table;}
 .archive-pagination:after, .clearfix:after, .entry:after, .entry-pagination:after, .footer-widgets:after, .nav-primary:after, .nav-secondary:after, .site-container:after, .site-footer:after, .site-header:after, .site-inner:after, .wrap:after {clear: both;content: " ";display: table;}
 html {font-size: 62.5%;}
-body {background-color: #000;color: #666;font-family: "Nanum Gothic",Helvetica,Arial,sans-serif;font-size: 16px;font-size: 1.6rem;font-weight: 300;line-height: 1.625;background-image: url("https://peterwm.com/wp-content/uploads/2012/08/peter-bg.jpg.webp");background-repeat: no-repeat;background-position: right top;background-attachment: fixed;}
+body {background-color: #d9dacb;color: #666;font-family: "Nanum Gothic",Helvetica,Arial,sans-serif;font-size: 16px;font-size: 1.6rem;font-weight: 300;line-height: 1.625;background-image: url("https://peterwm.com/wp-content/uploads/2019/09/peter-wm-warwick-mahoney-digital-marketing-nz-seo-expert-left.jpg");background-repeat: no-repeat;background-position: right bottom;background-attachment: fixed;border-radius: 50%;}
 a, button, input:focus, input[type="button"], input[type="reset"], input[type="submit"], textarea:focus, .button {-webkit-transition: all .1s ease-in-out;-moz-transition: all .1s ease-in-out;-ms-transition: all .1s ease-in-out;-o-transition: all .1s ease-in-out;transition: all .1s ease-in-out;}
 ::-moz-selection {background-color: #424242;color: #fff;}
 ::selection {background-color: #424242;color: #fff;}
-a {color: #f00;text-decoration: none;}
+a {color: #8c6475;text-decoration: none;}
 a img {margin-bottom: -4px;margin-bottom: -.4rem;}
 a:hover {color: #d0d0d0;}
 p {margin: 0 0 24px;margin: 0 0 2.4rem;padding: 0;}
@@ -71,10 +71,10 @@ input, select, textarea {background-color: #fff;border: 1px solid #ddd;border-ra
 input:focus, textarea:focus {border: 1px solid #999;outline: none;}
 ::-moz-placeholder {color: #999;opacity: 1;}
 ::-webkit-input-placeholder {color: #999;}
-button, input[type="button"], input[type="reset"], input[type="submit"], .button, .entry-content .button {background-color: #f00;border: none;box-shadow: none;color: #fff;cursor: pointer;padding: 16px 24px;padding: 1.6rem 2.4rem;text-transform: uppercase;text-decoration: none;width: 100%;text-align: center;font-size: 16px;}
-button:hover, input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], .button:hover, .entry-content .button:hover {background-color: #008000;text-decoration: none;}
+button, input[type="button"], input[type="reset"], input[type="submit"], .button, .entry-content .button {background-color: #8c6475;border: none;box-shadow: none;color: #fff;cursor: pointer;padding: 16px 24px;padding: 1.6rem 2.4rem;text-transform: uppercase;text-decoration: none;width: 100%;text-align: center;font-size: 16px;}
+button:hover, input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"], .button:hover, .entry-content .button:hover {background-color: #648c7b;text-decoration: none;}
 .button {border-radius: 3px;display: inline-block;}
-#text-6 .button:hover {background-color: #008000;}
+#text-6 .button:hover {background-color: #648c7b;}
 input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-results-button {display: none;}
 table {border-collapse: collapse;border-spacing: 0;line-height: 2;margin-bottom: 40px;margin-bottom: 4rem;width: 100%;}
 tbody {border-bottom: 1px solid #ddd;}
@@ -140,7 +140,7 @@ img.alignright, .wp-caption.alignright {margin: 0 0 24px 24px;margin: 0 0 2.4rem
 #text-6 .widget-title {color: #fff;}
 #text-6 input {margin-bottom: 16px;margin-bottom: 1.6rem;}
 #text-6 input:focus {border: 1px solid #ddd;}
-#text-6 input[type="submit"] {background-color: #f00;color: #fff;margin: 0;width: 100%;}
+#text-6 input[type="submit"] {background-color: #8c6475;color: #fff;margin: 0;width: 100%;}
 #text-6 input:hover[type="submit"] {background-color: #fff;color: #424242;}
 .latest-tweets ul li {margin-bottom: 16px;margin-bottom: 1.6rem;}
 div.gform_wrapper input[type="email"], div.gform_wrapper input[type="text"], div.gform_wrapper textarea, div.gform_wrapper .ginput_complex label {font-size: 16px;font-size: 1.6rem;padding: 16px;padding: 1.6rem;}
@@ -152,8 +152,8 @@ img#wpstats {display: none;}
 .title-area {float: left;font-family: Lato,sans-serif;font-display: auto;padding: 16px 0;padding: 1.6rem 0;}
 .header-image .title-area {padding: 0;}
 .site-title {font-size: 42px;font-size: 4.2rem;line-height: 1;margin: 0 0 8px;margin: 0 0 .8rem;text-transform: uppercase;font-family: "Abril Fatface";font-display: auto;}
-.site-title a, .site-title a:hover {color: #fff;}
-.site-description {color: #fff;font-size: 16px;font-size: 1.6rem;font-weight: 300;line-height: 1;margin-bottom: 0;}
+.site-title a, .site-title a:hover {color: #424242;}
+.site-description {color: #424242;font-size: 16px;font-size: 1.6rem;font-weight: 300;line-height: 1;margin-bottom: 0;}
 .header-full-width .title-area, .header-full-width .site-title {width: 100%;}
 .header-image .site-description, .header-image .site-title a {display: block;text-indent: -9999px;}
 .header-image .site-header .wrap {padding: 0px;display: block;}
@@ -164,9 +164,9 @@ img#wpstats {display: none;}
 .genesis-nav-menu {clear: both;color: #999;font-family: Lato,sans-serif;font-display: auto;font-weight: 600;font-weight: 300;line-height: 1.5;width: 100%;}
 .genesis-nav-menu .menu-item {display: inline-block;text-align: left;}
 .genesis-nav-menu a {border: none;color: #444;display: block;padding: 28px 24px;padding: 2.8rem 2.4rem;position: relative;}
-.genesis-nav-menu .current-menu-item > a {color: #fff;background-color: #f00;}
+.genesis-nav-menu .current-menu-item > a {color: #fff;background-color: #8c6475;}
 .sub-menu > a {color: #999;}
-.genesis-nav-menu a:hover, .genesis-nav-menu .sub-menu a:hover, .genesis-nav-menu .sub-menu .current-menu-item a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {color: #fff;background-color: #f00;}
+.genesis-nav-menu a:hover, .genesis-nav-menu .sub-menu a:hover, .genesis-nav-menu .sub-menu .current-menu-item a, .genesis-nav-menu .sub-menu .current-menu-item > a:hover {color: #fff;background-color: #8c6475;}
 .genesis-nav-menu > .menu-item > a {text-transform: uppercase;}
 .genesis-nav-menu .sub-menu {left: -9999px;opacity: 0;position: absolute;-webkit-transition: opacity .4s ease-in-out;-moz-transition: opacity .4s ease-in-out;-ms-transition: opacity .4s ease-in-out;-o-transition: opacity .4s ease-in-out;transition: opacity .4s ease-in-out;width: 200px;z-index: 99;}
 .genesis-nav-menu .sub-menu a {background-color: #fff;border: 1px solid #eee;border-top: none;font-size: 14px;font-size: 1.4rem;padding: 16px 20px;padding: 1.6rem 2rem;position: relative;width: 200px;}
@@ -252,7 +252,7 @@ li.comment {background-color: #f5f5f5;border: 2px solid #fff;border-right: none;
 	.sidebar-content-sidebar .content, .sidebar-sidebar-content .content, .content-sidebar-sidebar .content {width: 400px;}
 	.footer-widgets-1, .footer-widgets-2, .footer-widgets-3, .sidebar-primary, .title-area {width: 300px;}}
 @media only screen and (max-width: 1023px) {body {background-color: #fff;background-image: none;}
-	.site-header {background-color: #000;}
+	.site-header {background-color: #d9dacb;}
 	.nav-primary {background-color: #424242;}
 	.genesis-nav-menu a {color: #e0e0e0;}
 	.genesis-nav-menu .current-menu-item > a {color: #fff;}
