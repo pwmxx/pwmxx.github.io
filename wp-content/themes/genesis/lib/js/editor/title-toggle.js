@@ -25,12 +25,17 @@ import { CheckboxControl, Fill, PanelBody, PanelRow } from '@wordpress/component
 import { registerPlugin } from '@wordpress/plugins';
 
 /**
+ * Internal dependencies
+ */
+import { newMeta } from '../editor/new-meta.js';
+
+/**
  * Checkbox component for the hide title option.
  *
  * @param {Object} props Component properties.
  * @return {Object} hideTitleComponent
  */
-function genesisHideTitleComponent( { hideTitle, onUpdate } ) {
+function genesisHideTitleComponent( { hideTitle = false, onUpdate } ) {
 	return (
 		<Fragment>
 			<Fill name="GenesisSidebar">
@@ -38,7 +43,7 @@ function genesisHideTitleComponent( { hideTitle, onUpdate } ) {
 					<PanelRow>
 						<CheckboxControl
 							label={ __( 'Hide Title', 'genesis' ) }
-							checked={ hideTitle }
+							checked={ !! hideTitle }
 							onChange={ () => onUpdate( ! hideTitle ) }
 						/>
 					</PanelRow>
@@ -59,18 +64,9 @@ const render = compose( [
 	} ),
 	withDispatch( ( dispatch ) => ( {
 		onUpdate( hideTitle ) {
-			const currentMeta = select( 'core/editor' ).getEditedPostAttribute( 'meta' );
-			const genesisMeta = Object.keys( currentMeta )
-				.filter( ( key ) => key.startsWith( '_genesis' ) )
-				.reduce( ( obj, key ) => {
-					obj[ key ] = currentMeta[ key ];
-					return obj;
-				}, {} );
-			const newMeta = {
-				...genesisMeta,
-				_genesis_hide_title: hideTitle,
-			};
-			dispatch( 'core/editor' ).editPost( { meta: newMeta } );
+			dispatch( 'core/editor' ).editPost(
+				{ meta: newMeta( '_genesis_hide_title', !! hideTitle ) }
+			);
 		},
 	} ) ),
 ] )( genesisHideTitleComponent );

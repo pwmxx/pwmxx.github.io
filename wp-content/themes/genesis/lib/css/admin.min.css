@@ -49,12 +49,14 @@ h1.genesis-onboarding-page-title {font-size: 16px;font-weight: 600;margin-bottom
 .genesis-onboarding-button-alt:hover {cursor: pointer;color: #23282d;text-decoration: underline;}
 .genesis-onboarding-button-disabled {pointer-events: none;background: #6c8196;opacity: .7;}
 .genesis-onboarding-button-disabled+#genesis-onboarding-settings-link {pointer-events: none;opacity: .4;}
-.genesis-onboarding-list {position: relative;margin-top: 5%;padding-top: 2%;border-top: 1px dotted #ccc;}
+.genesis-onboarding-list {position: relative;margin-top: 5%;padding-top: 2%;}
 .genesis-onboarding-page-starter-packs .genesis-onboarding-list {margin-top: 20px;}
 .genesis-onboarding-list>li {padding-left: 70px;opacity: .8;transition: .3s ease;position: relative;}
+.genesis-onboarding-list>li:first-of-type:before {display: block;position: absolute;top: -30px;left: 0;content: " ";width: 100%;border-top: 1px dotted #ccc;}
 .genesis-onboarding-list p {margin-top: 10px;}
 .genesis-onboarding-list h3 {margin-bottom: 10px;}
 .genesis-onboarding-list>li:not(:last-child) {border-bottom: 1px dotted #ccc;margin-bottom: 4%;padding-bottom: 1%;}
+.genesis-onboarding-list>li.genesis-onboarding-area-hidden {margin-bottom: 0;padding-bottom: 0;}
 li.genesis-onboarding-task-final {visibility: hidden;opacity: 0;transition: visibility 0s,opacity 1s linear;height: 0;}
 li.genesis-onboarding-list-done {visibility: visible;opacity: 1;height: auto;}
 .genesis-onboarding-list .genesis-onboarding-list-done, .genesis-onboarding-list .genesis-onboarding-list-processing {opacity: 1;}
@@ -92,10 +94,11 @@ li.genesis-onboarding-list-done {visibility: visible;opacity: 1;height: auto;}
 .genesis-onboarding-page-starter-packs .genesis-onboarding-main {width: 100%;}
 .genesis-onboarding-starter-packs {margin-top: 40px;}
 .genesis-onboarding-area-hidden {height: 0;margin: 0;opacity: 0;visibility: hidden;}
+.genesis-onboarding-area-hidden div, .genesis-onboarding-area-hidden h3, .genesis-onboarding-area-hidden p {height: 0;margin: 0;}
 .genesis-onboarding-area-visible {opacity: 1;visibility: visible;}
 .genesis-onboarding-starter-packs .pack-summary {border: 1px solid #ddd;cursor: pointer;margin-bottom: 20px;position: relative;}
 .genesis-onboarding-starter-packs .pack-image:focus img, .genesis-onboarding-starter-packs .pack-image:hover img {opacity: .4;}
-.genesis-onboarding-starter-packs .pack-screenshot img {max-width: 100%;}
+.genesis-onboarding-starter-packs .pack-screenshot img {display: block;max-width: 100%;}
 .genesis-onboarding-starter-packs .pack-details {box-shadow: inset 0 1px 0 rgba(0,0,0,.1);display: flex;height: 48px;justify-content: space-between;}
 .genesis-onboarding-starter-packs .pack-name {font-size: 15px;height: 18px;line-height: 1;margin: 15px;max-width: 80%;overflow: hidden;padding: 0;text-overflow: ellipsis;white-space: nowrap;}
 .genesis-onboarding-starter-packs .pack-actions {margin: 10px 15px;}
@@ -114,8 +117,9 @@ li.genesis-onboarding-list-done {visibility: visible;opacity: 1;height: auto;}
 	.pack-info-screenshot img {max-width: 100%;}
 	.genesis-onboarding-starter-packs {display: grid;grid-gap: 30px;grid-template-columns: minmax(0,1fr) minmax(0,1fr);}
 	.genesis-onboarding-starter-packs .pack-summary {margin-bottom: 0;}
-	.genesis-onboarding-starter-packs .pack-name {max-width: 60%;}}
-@media (min-width:1300px) {.genesis-onboarding-starter-packs {grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);}
+	.genesis-onboarding-starter-packs .pack-name {max-width: 60%;}
+	.genesis-onboarding-list>li:first-of-type:before {top: -40px;}}
+@media (min-width:1280px) {.genesis-onboarding-starter-packs {grid-template-columns: minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);}
 	.genesis-onboarding-page-starter-packs .genesis-onboarding-intro-text {width: 65%;}}
 dialog {border: 0;display: block;}
 .no-scroll {overflow: hidden;}
