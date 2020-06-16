@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Wordpress SEO Expert</title>
+	<atom:link href="https://peterwm.com/tag/ubuntu/feed/" rel="self" type="application/rss+xml" />
+	<link>https://peterwm.com/</link>
+	<description>Peter Warwick-Mahoney</description>
+	<lastBuildDate>Thu, 18 Feb 2016 13:38:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.2</generator>
+	<item>
+		<title>I was having all kind of trouble installing&#8230;</title>
+		<link>https://peterwm.com/i-was-having-all-kind-of-trouble-installing/</link>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Thu, 18 Feb 2016 13:38:26 +0000</pubDate>
+				<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[install]]></category>
+		<category><![CDATA[server]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<category><![CDATA[usb]]></category>
+		<guid isPermaLink="false">http://petermahoney.me/i-was-having-all-kind-of-trouble-installing/</guid>
+
+					<description><![CDATA[I was having all kind of trouble installing Ubuntu Server today. I tried writing the disc image to a USB in a variety of ways, but it kept failing at various points of the install, check disks never succeeded, and I couldn&#8217;t help but notice I wasn&#8217;t even seeing a couple of the screens I<a class="more-link" href="https://peterwm.com/i-was-having-all-kind-of-trouble-installing/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p>I was having all kind of trouble installing Ubuntu Server today. I tried writing the disc image to a USB in a variety of ways, but it kept failing at various points of the install, check disks never succeeded, and I couldn&#8217;t help but notice I wasn&#8217;t even seeing a couple of the screens I expected too.</p>
+<p>Over lunch I found this:</p>
+<pre>Due to changes in syslinux, it is not currently possible to use usb-creator from 14.04 and earlier releases to write USB images for 15.04 or later; we believe that it is also not possible to use usb-creator from a 15.04 or later system to write USB images for earlier releases. For now the workaround is to use a matching release of Ubuntu to write the images, but we intend to issue updates soon to work around this incompatibility</pre>
+<p>So the issue was the computer I was creating the USB on wasn&#8217;t compatible with the Ubuntu server image I was creating.</p>
+<p>Here&#8217;s the solution:</p>
+<ol>
+<li>Right click your ubuntu-15.10-desktop-amd64.iso > Open with Disk Image writer</li>
+<li>Choose your usb drive and click Start Restoring&#8230; and follow the instruction.</li>
+</ol>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Gwibber and the new Twitter API</title>
+		<link>https://peterwm.com/gwibber-and-the-new-twitter-api/</link>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Mon, 08 Jul 2013 15:08:51 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Hints & Tips]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[gwibber]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<category><![CDATA[twitter API]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<guid isPermaLink="false">http://www.petermahoney.me/?p=862</guid>
+
+					<description><![CDATA[I noticed Gwibber, my social networking app for Ubuntu, stopped updating my Twitter status after the API was updated. Basically, it was broken. And as of yet, it&#8217;s not been patched. Here&#8217;s a fix I used to get Ubuntu updating my Twitter account again. [sourcecode]pkill gwibber sudo gedit &#34;/usr/share/gwibber/plugins/twitter/__init__.py&#34;[/sourcecode] Then search and replace &#8220;api.twitter.com/1&#8221; to<a class="more-link" href="https://peterwm.com/gwibber-and-the-new-twitter-api/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p>I noticed Gwibber, my social networking app for Ubuntu, stopped updating my Twitter status after the API was updated. Basically, it was broken.</p>
+<p>And as of yet, it&#8217;s not been patched.</p>
+<p>Here&#8217;s a fix I used to get Ubuntu updating my Twitter account again.</p>
+[sourcecode]pkill gwibber<br />
+sudo gedit &quot;/usr/share/gwibber/plugins/twitter/__init__.py&quot;[/sourcecode]
+<p>Then search and replace &#8220;api.twitter.com/1&#8221; to &#8220;api.twitter.com/1.1&#8221; </p>
+<p>Tada!</p>
+<p>For the sake of honesty, I&#8217;ll admit I didn&#8217;t find this fix myself, <a href="https://bugs.launchpad.net/ubuntu/+source/gwibber/+bug/1190575/comments/6" target="_blank" rel="noopener noreferrer">I found it here.</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

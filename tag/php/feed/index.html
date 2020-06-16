@@ -12,20 +12,73 @@
 	<atom:link href="https://peterwm.com/tag/php/feed/" rel="self" type="application/rss+xml" />
 	<link>https://peterwm.com/</link>
 	<description>Peter Warwick-Mahoney</description>
-	<lastBuildDate>Thu, 21 Mar 2013 10:10:15 +0000</lastBuildDate>
+	<lastBuildDate>Tue, 09 Feb 2016 11:43:03 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.2.3</generator>
+	<generator>https://wordpress.org/?v=5.4.2</generator>
 	<item>
+		<title>Quick dirty PHP redirect</title>
+		<link>https://peterwm.com/quick-dirty-php-redirect/</link>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Tue, 09 Feb 2016 11:43:03 +0000</pubDate>
+				<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[code snippets]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://petermahoney.me/quick-dirty-php-redirect/</guid>
+
+					<description><![CDATA[For when you need to do it and just do it quickly. &#60;?php header('Location:http://www.yoursite.com/new_page.html'); ?&#62;]]></description>
+										<content:encoded><![CDATA[<p>For when you need to do it and just do it quickly.</p>
+<pre><code>&lt;?php header('Location:http://www.yoursite.com/new_page.html'); ?&gt;</code></pre>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Show all images in a directory using PHP</title>
+		<link>https://peterwm.com/show-all-images-in-a-directory-using-php/</link>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Fri, 01 Mar 2013 12:23:43 +0000</pubDate>
+				<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[directory]]></category>
+		<category><![CDATA[display]]></category>
+		<category><![CDATA[folder]]></category>
+		<category><![CDATA[glob()]]></category>
+		<category><![CDATA[images]]></category>
+		<category><![CDATA[PHP]]></category>
+		<guid isPermaLink="false">http://www.petermahoney.me/show-all-images-in-a-directory-using-php/</guid>
+
+					<description><![CDATA[This is a sweet script. It displays all the files in a particular directory. In this case it&#8217;s a folder full of user uploads, so it makes keeping an eye on things a breeze. [sourcecode language=&#8221;php&#8221;]]]></description>
+										<content:encoded><![CDATA[<p>This is a sweet script. It displays all the files in a particular directory. In this case it&#8217;s a folder full of user uploads, so it makes keeping an eye on things a breeze.</p>
+[sourcecode language=&#8221;php&#8221;]<?php
+ foreach(glob('upl/*.*') as $file){
+     echo '<img src="'.$file.'" border="0" alt="'.$file.'">&#8216;;<br />
+ }<br />
+ ?>[/sourcecode]
+<p>You can of course easily modify it to show only JPGs or other image types (if you&#8217;re pulling content from a directory of mixed file types) or to edit the echo so it returns images that link to user profiles etc.</p>
+<p>But this is it&#8217;s most basic form.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
 		<title>Website code template</title>
 		<link>https://peterwm.com/website-code-template/</link>
-				<pubDate>Wed, 13 Feb 2013 15:00:42 +0000</pubDate>
+		
 		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
-				<category><![CDATA[Freebies]]></category>
-		<category><![CDATA[Tools]]></category>
+		<pubDate>Wed, 13 Feb 2013 15:00:42 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Freebies]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
 		<category><![CDATA[#fridayfreebie]]></category>
 		<category><![CDATA[CSS]]></category>
 		<category><![CDATA[files]]></category>
@@ -37,10 +90,10 @@
 		<category><![CDATA[template]]></category>
 		<category><![CDATA[top.php]]></category>
 		<category><![CDATA[website template]]></category>
-
 		<guid isPermaLink="false">https://peterwm.com/?p=590</guid>
-				<description><![CDATA[This is for my fellow developers out there. I have a small series of files I copy and paste whenever I&#8217;m about to start a new project, they have default templates for various files I use a lot. Like a header, footer, index page, blank stylesheet, and something called &#8220;top.php&#8221; that I use to open<a class="more-link" href="https://peterwm.com/website-code-template/"> [Continue Reading]</a>]]></description>
-								<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-592" title="site_template_code_html5_php" src="https://peterwm.com/wp-content/uploads/2013/02/site_template_code_html5_php-150x150.jpg" alt="Website template code HTML5 PHP MySQL Linux Unix CSS" width="150" height="150" srcset="https://peterwm.com/wp-content/uploads/2013/02/site_template_code_html5_php-150x150.jpg 150w, https://peterwm.com/wp-content/uploads/2013/02/site_template_code_html5_php.jpg 250w" sizes="(max-width: 150px) 100vw, 150px" />This is for my fellow developers out there.</p>
+
+					<description><![CDATA[This is for my fellow developers out there. I have a small series of files I copy and paste whenever I&#8217;m about to start a new project, they have default templates for various files I use a lot. Like a header, footer, index page, blank stylesheet, and something called &#8220;top.php&#8221; that I use to open<a class="more-link" href="https://peterwm.com/website-code-template/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-592" title="site_template_code_html5_php" src="https://peterwm.com/wp-content/uploads/2013/02/site_template_code_html5_php-150x150.jpg" alt="Website template code HTML5 PHP MySQL Linux Unix CSS" width="150" height="150" srcset="https://peterwm.com/wp-content/uploads/2013/02/site_template_code_html5_php-150x150.jpg 150w, https://peterwm.com/wp-content/uploads/2013/02/site_template_code_html5_php.jpg 250w" sizes="(max-width: 150px) 100vw, 150px" />This is for my fellow developers out there.</p>
 <p>I have a small series of files I copy and paste whenever I&#8217;m about to start a new project, they have default templates for various files I use a lot. Like a header, footer, index page, blank stylesheet, and something called &#8220;top.php&#8221; that I use to open sessions and connect to databases.</p>
 <p>There are also some of my standard folders pre-made too (with the correct server permissions) like &#8220;img&#8221; (images) and &#8220;upl&#8221; (uploads).</p>
 <p>This was going to be last week&#8217;s <a href="https://twitter.com/search?q=%23fridayfreebie" target="_blank">#fridayfreebie,</a> but here it is on a Wednesday instead.</p>
@@ -55,27 +108,35 @@
 <p>I&#8217;ve zipped it up to share! Feel free to do whatever you want with it—although there is a lot of Peter Mahoney specific stuff in there, so you might want to take that out. Unless of course you<em> like</em> giving me credit for your work. 🙂</p>
 <p><a href="https://peterwm.com/wp-content/uploads/2013/02/www-template.zip">HTML5 website template (.zip)</a></p>
 ]]></content:encoded>
-										</item>
+					
+		
+		
+			</item>
 		<item>
 		<title>Create custom RSS feeds in WordPress</title>
 		<link>https://peterwm.com/create-custom-rss-feeds-in-wordpress/</link>
-				<pubDate>Fri, 31 Aug 2012 15:44:44 +0000</pubDate>
+		
 		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
-				<category><![CDATA[Hints & Tips]]></category>
+		<pubDate>Fri, 31 Aug 2012 15:44:44 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
 		<category><![CDATA[documentation]]></category>
 		<category><![CDATA[feeds]]></category>
 		<category><![CDATA[PHP]]></category>
 		<category><![CDATA[rss]]></category>
 		<category><![CDATA[wordpress]]></category>
-
 		<guid isPermaLink="false">https://peterwm.com/?p=44</guid>
-				<description><![CDATA[I couldn&#8217;t quite work out how best to do create a custom RSS feed in WordPress. My task seemed simple enough, to make an RSS feed of news articles from popular news sources&#8230;but the RSS feed needed to link back to the original source, NOT the article in WordPress. Writing the PHP script to generate<a class="more-link" href="https://peterwm.com/create-custom-rss-feeds-in-wordpress/"> [Continue Reading]</a>]]></description>
-								<content:encoded><![CDATA[<p>I couldn&#8217;t <em>quite</em> work out how best to do create a custom RSS feed in WordPress.</p>
+
+					<description><![CDATA[I couldn&#8217;t quite work out how best to do create a custom RSS feed in WordPress. My task seemed simple enough, to make an RSS feed of news articles from popular news sources&#8230;but the RSS feed needed to link back to the original source, NOT the article in WordPress. Writing the PHP script to generate<a class="more-link" href="https://peterwm.com/create-custom-rss-feeds-in-wordpress/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p>I couldn&#8217;t <em>quite</em> work out how best to do create a custom RSS feed in WordPress.</p>
 <p>My task seemed simple enough, to make an RSS feed of news articles from popular news sources&#8230;but the RSS feed needed to link back to the original source, NOT the article in WordPress.</p>
 <p>Writing the PHP script to generate the RSS was simple, but the final step was getting WordPress to serve that feed.</p>
 <p>Here&#8217;s the documentation I used, in addition to a custom field:</p>
 <p><a href="http://tips4php.net/2010/05/create-custom-rss-feeds-in-wordpress/">Create custom RSS feeds in WordPress | Tips4PHP</a>.</p>
 ]]></content:encoded>
-										</item>
+					
+		
+		
+			</item>
 	</channel>
 </rss>

@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Wordpress SEO Expert</title>
+	<atom:link href="https://peterwm.com/category/code/feed/" rel="self" type="application/rss+xml" />
+	<link>https://peterwm.com/</link>
+	<description>Peter Warwick-Mahoney</description>
+	<lastBuildDate>Tue, 12 May 2020 01:54:16 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.4.2</generator>
+	<item>
+		<title>Gwibber and the new Twitter API</title>
+		<link>https://peterwm.com/gwibber-and-the-new-twitter-api/</link>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Mon, 08 Jul 2013 15:08:51 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Hints & Tips]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[gwibber]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<category><![CDATA[twitter API]]></category>
+		<category><![CDATA[ubuntu]]></category>
+		<guid isPermaLink="false">http://www.petermahoney.me/?p=862</guid>
+
+					<description><![CDATA[I noticed Gwibber, my social networking app for Ubuntu, stopped updating my Twitter status after the API was updated. Basically, it was broken. And as of yet, it&#8217;s not been patched. Here&#8217;s a fix I used to get Ubuntu updating my Twitter account again. [sourcecode]pkill gwibber sudo gedit &#34;/usr/share/gwibber/plugins/twitter/__init__.py&#34;[/sourcecode] Then search and replace &#8220;api.twitter.com/1&#8221; to<a class="more-link" href="https://peterwm.com/gwibber-and-the-new-twitter-api/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p>I noticed Gwibber, my social networking app for Ubuntu, stopped updating my Twitter status after the API was updated. Basically, it was broken.</p>
+<p>And as of yet, it&#8217;s not been patched.</p>
+<p>Here&#8217;s a fix I used to get Ubuntu updating my Twitter account again.</p>
+[sourcecode]pkill gwibber<br />
+sudo gedit &quot;/usr/share/gwibber/plugins/twitter/__init__.py&quot;[/sourcecode]
+<p>Then search and replace &#8220;api.twitter.com/1&#8221; to &#8220;api.twitter.com/1.1&#8221; </p>
+<p>Tada!</p>
+<p>For the sake of honesty, I&#8217;ll admit I didn&#8217;t find this fix myself, <a href="https://bugs.launchpad.net/ubuntu/+source/gwibber/+bug/1190575/comments/6" target="_blank" rel="noopener noreferrer">I found it here.</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Make a &#8220;Share on Twitter&#8221; link with URL and Hashtags</title>
+		<link>https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/</link>
+					<comments>https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/#comments</comments>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Tue, 19 Feb 2013 14:42:29 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[hashtagnerdy]]></category>
+		<category><![CDATA[hastags]]></category>
+		<category><![CDATA[linking to twitter with hashtags]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<category><![CDATA[url]]></category>
+		<guid isPermaLink="false">https://peterwm.com/?p=669</guid>
+
+					<description><![CDATA[This is a little coding trick I get asked about quite a bit. The link you have to make to share something to Twitter is quite simple: http://twitter.com/share?text=text goes here But getting a URL and hastag in there is a different matter. To be honest most developers do know how to include the URL, but<a class="more-link" href="https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-670" title="twitter link sharing code with hastags" src="https://peterwm.com/wp-content/uploads/2013/02/twitter-link-sharing-code-with-hastags.jpg" alt="Twitter link, Twitter sharing code with hastags and URL" width="150" height="150" />This is a little coding trick I get asked about quite a bit.</p>
+<p>The link you have to make to share something to Twitter is quite simple:</p>
+<blockquote><p>http://twitter.com/share?text=text goes here</p></blockquote>
+<p>But getting a URL and hastag in there is a different matter. To be honest most developers do know how to include the URL, but hashtags have proved more elusive!</p>
+<blockquote><p>http://twitter.com/share?text=text goes here&amp;url=http://url goes here&amp;hashtags=hashtag1,hashtag2,hashtag3</p></blockquote>
+<p>Here&#8217;s an example to try out:</p>
+<blockquote><p><a href="http://twitter.com/share?text=Here's an awesome tip!&amp;url=https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/&amp;hashtags=peter,is,awesome" target="_blank">http://twitter.com/share?text=Here&#8217;s an awesome tip!&amp;url=https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/&amp;hashtags=peter,is,awesome</a></p></blockquote>
+<p>And that&#8217;s it!</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/feed/</wfw:commentRss>
+			<slash:comments>11</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Website code template</title>
+		<link>https://peterwm.com/website-code-template/</link>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Wed, 13 Feb 2013 15:00:42 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Freebies]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[#fridayfreebie]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[files]]></category>
+		<category><![CDATA[footer]]></category>
+		<category><![CDATA[header]]></category>
+		<category><![CDATA[html5]]></category>
+		<category><![CDATA[mysql]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[template]]></category>
+		<category><![CDATA[top.php]]></category>
+		<category><![CDATA[website template]]></category>
+		<guid isPermaLink="false">https://peterwm.com/?p=590</guid>
+
+					<description><![CDATA[This is for my fellow developers out there. I have a small series of files I copy and paste whenever I&#8217;m about to start a new project, they have default templates for various files I use a lot. Like a header, footer, index page, blank stylesheet, and something called &#8220;top.php&#8221; that I use to open<a class="more-link" href="https://peterwm.com/website-code-template/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-592" title="site_template_code_html5_php" src="https://peterwm.com/wp-content/uploads/2013/02/site_template_code_html5_php-150x150.jpg" alt="Website template code HTML5 PHP MySQL Linux Unix CSS" width="150" height="150" srcset="https://peterwm.com/wp-content/uploads/2013/02/site_template_code_html5_php-150x150.jpg 150w, https://peterwm.com/wp-content/uploads/2013/02/site_template_code_html5_php.jpg 250w" sizes="(max-width: 150px) 100vw, 150px" />This is for my fellow developers out there.</p>
+<p>I have a small series of files I copy and paste whenever I&#8217;m about to start a new project, they have default templates for various files I use a lot. Like a header, footer, index page, blank stylesheet, and something called &#8220;top.php&#8221; that I use to open sessions and connect to databases.</p>
+<p>There are also some of my standard folders pre-made too (with the correct server permissions) like &#8220;img&#8221; (images) and &#8220;upl&#8221; (uploads).</p>
+<p>This was going to be last week&#8217;s <a href="https://twitter.com/search?q=%23fridayfreebie" target="_blank">#fridayfreebie,</a> but here it is on a Wednesday instead.</p>
+<p>This particular version is the one I use most commonly, and it&#8217;s set up for:</p>
+<ul>
+<li>PHP</li>
+<li>MySQL</li>
+<li>HTML5</li>
+<li>CSS (any version!)</li>
+<li>and ideally a unix/linux based server, because it references the top level of the site as being &#8220;/&#8221;.</li>
+</ul>
+<p>I&#8217;ve zipped it up to share! Feel free to do whatever you want with it—although there is a lot of Peter Mahoney specific stuff in there, so you might want to take that out. Unless of course you<em> like</em> giving me credit for your work. 🙂</p>
+<p><a href="https://peterwm.com/wp-content/uploads/2013/02/www-template.zip">HTML5 website template (.zip)</a></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>How do you annoy a web developer?</title>
+		<link>https://peterwm.com/how-do-you-annoy-a-web-developer/</link>
+					<comments>https://peterwm.com/how-do-you-annoy-a-web-developer/#comments</comments>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Sun, 09 Dec 2012 19:17:01 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Hints & Tips]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[comic]]></category>
+		<category><![CDATA[humour]]></category>
+		<category><![CDATA[tags]]></category>
+		<category><![CDATA[web development]]></category>
+		<category><![CDATA[xkcd]]></category>
+		<guid isPermaLink="false">https://peterwm.com/?p=351</guid>
+
+					<description><![CDATA[This is the briefest of posts, because the content is entirely thanks to the wonderful xkcd comic, and it&#8217;s pretty damn nerdy. First person in the comments to exclaim that they get it, and can give some sort of rationale, gets a prize. via xkcd: Tags.]]></description>
+										<content:encoded><![CDATA[<p>This is the briefest of posts, because the content is entirely thanks to the wonderful <a href="http://xkcd.com" target="_blank">xkcd comic,</a> and it&#8217;s pretty damn nerdy.</p>
+<p>First person in the comments to exclaim that they get it, and can give some sort of rationale, gets a prize.</p>
+<p><img class="aligncenter size-full wp-image-353" title="How do you annoy a web developer, xkcd, tags" src="https://peterwm.com/wp-content/uploads/2012/12/tags.png" alt="How do you annoy a web developer, xkcd, tags" width="451" height="57" srcset="https://peterwm.com/wp-content/uploads/2012/12/tags.png 451w, https://peterwm.com/wp-content/uploads/2012/12/tags-300x37.png 300w" sizes="(max-width: 451px) 100vw, 451px" /></p>
+<p>via <a href="http://xkcd.com/1144/">xkcd: Tags</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://peterwm.com/how-do-you-annoy-a-web-developer/feed/</wfw:commentRss>
+			<slash:comments>2</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Speeding up your site</title>
+		<link>https://peterwm.com/speeding-up-your-site/</link>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Tue, 30 Oct 2012 13:18:45 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[htaccess]]></category>
+		<category><![CDATA[search engine optimisation]]></category>
+		<category><![CDATA[seo]]></category>
+		<category><![CDATA[site speed]]></category>
+		<category><![CDATA[web server]]></category>
+		<guid isPermaLink="false">https://peterwm.com/?p=143</guid>
+
+					<description><![CDATA[There is a slew of methods to speed your site up&#8211;which is not only the polite thing to do for your guests&#8211;but helps with Speed Engine Optimisation (SEO) too. Google in particular looks at how quickly your site loads when deciding how to rank your site in search results. Now, if you&#8217;re familiar with web<a class="more-link" href="https://peterwm.com/speeding-up-your-site/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p>There is a slew of methods to speed your site up&#8211;which is not only the polite thing to do for your guests&#8211;but helps with Speed Engine Optimisation (SEO) too. Google in particular looks at how quickly your site loads when deciding how to rank your site in search results.</p>
+<p>Now, if you&#8217;re familiar with web servers then everything you need to know is written below. If not, this is the sort of thing you want to have an expert do for you; a faster site is too good an opportunity to pass up.</p>
+<p>Browser caching is a process whereby we&#8217;re able to reduce the number of HTTP requests the server needs to process, which reduced page load times. Your server tells the visitor&#8217;s browser not to look for certain files everytime&#8211;usually the file that don&#8217;t change often anyway.</p>
+<p>Edit your .htaccess file for your site, and include this code:</p>
+<p><code>## EXPIRES CACHING ##<br />
+# by Peter Mahoney of peterwm.com<br />
+&lt;IfModule mod_expires.c&gt;<br />
+ExpiresActive On<br />
+ExpiresByType image/jpg "access 1 year"<br />
+ExpiresByType image/jpeg "access 1 year"<br />
+ExpiresByType image/gif "access 1 year"<br />
+ExpiresByType image/png "access 1 year"<br />
+ExpiresByType text/css "access 1 month"<br />
+ExpiresByType application/pdf "access 1 month"<br />
+ExpiresByType text/x-javascript "access 1 month"<br />
+ExpiresByType application/x-shockwave-flash "access 1 month"<br />
+ExpiresByType image/x-icon "access 1 year"<br />
+ExpiresDefault "access 2 days"<br />
+&lt;/IfModule&gt;<br />
+## EXPIRES CACHING ##</code></p>
+<p>Restart your web server, and you&#8217;re done!</p>
+<p>Noe this isn&#8217;t all there is to optimising a website for speed. Especially WordPress websites. As you&#8217;ll know by now I&#8217;m a WordPress SEO expert so I really pay a lot of attention to speed. There are plugins, image compression techniques and even extra code snippets worth using.</p>
+<p>When it comes to plugin choice for WordPress speed I recommend WP Rocket &#8211; it does a great job out of the box and with just a few setting changes you can really push the envelope. Using that as well as a series of manual image compression techniques I&#8217;m able to improve the average WordPress site&#8217;s speed by 40%!</p>
+<p>Speeding things up usually does require a few manual tweaks to code here and there &#8211; it&#8217;s really a job for a professional rather than just trying it yourself (it&#8217;s all too easy to stop a site working properly with this stuff.)</p>
+<p>I can&#8217;t recommend a faster site enough. For your users, SEO &#8211; hell even the good of the web itself. Let&#8217;s get that content flying.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Donate monthly via Paypal, and HTML</title>
+		<link>https://peterwm.com/donate-monthly-via-paypal-and-html/</link>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Mon, 17 Sep 2012 19:22:41 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[donate]]></category>
+		<category><![CDATA[html]]></category>
+		<category><![CDATA[paypal]]></category>
+		<guid isPermaLink="false">https://peterwm.com/?p=70</guid>
+
+					<description><![CDATA[BINGO! This is just what I needed tonight. I was starting to create a PHP solution that would enable me to set up monthly donations (rather than a subscription) to Paypal. But then I thought, &#8220;Paypal must have a more elegant solution for this, and if not more elegant, than certainly simpler&#8221;. And while they<a class="more-link" href="https://peterwm.com/donate-monthly-via-paypal-and-html/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p>BINGO! This is just what I needed tonight. I was starting to create a PHP solution that would enable me to set up monthly donations (rather than a subscription) to Paypal.</p>
+<p>But then I thought, &#8220;Paypal must have a more elegant solution for this, and if not more elegant, than certainly simpler&#8221;.</p>
+<p>And while they didn&#8217;t, a quick Google search revealed someone else had. In HTML.</p>
+<p><a href="http://nancimurdock.com/monthly-donations-button-paypal/" target="_blank">Monthly Donations Button | PayPal</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Create custom RSS feeds in WordPress</title>
+		<link>https://peterwm.com/create-custom-rss-feeds-in-wordpress/</link>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Fri, 31 Aug 2012 15:44:44 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[documentation]]></category>
+		<category><![CDATA[feeds]]></category>
+		<category><![CDATA[PHP]]></category>
+		<category><![CDATA[rss]]></category>
+		<category><![CDATA[wordpress]]></category>
+		<guid isPermaLink="false">https://peterwm.com/?p=44</guid>
+
+					<description><![CDATA[I couldn&#8217;t quite work out how best to do create a custom RSS feed in WordPress. My task seemed simple enough, to make an RSS feed of news articles from popular news sources&#8230;but the RSS feed needed to link back to the original source, NOT the article in WordPress. Writing the PHP script to generate<a class="more-link" href="https://peterwm.com/create-custom-rss-feeds-in-wordpress/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p>I couldn&#8217;t <em>quite</em> work out how best to do create a custom RSS feed in WordPress.</p>
+<p>My task seemed simple enough, to make an RSS feed of news articles from popular news sources&#8230;but the RSS feed needed to link back to the original source, NOT the article in WordPress.</p>
+<p>Writing the PHP script to generate the RSS was simple, but the final step was getting WordPress to serve that feed.</p>
+<p>Here&#8217;s the documentation I used, in addition to a custom field:</p>
+<p><a href="http://tips4php.net/2010/05/create-custom-rss-feeds-in-wordpress/">Create custom RSS feeds in WordPress | Tips4PHP</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>New Twitter logo in pure CSS</title>
+		<link>https://peterwm.com/new-twitter-logo-in-pure-css/</link>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Mon, 11 Jun 2012 17:04:50 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<guid isPermaLink="false">https://peterwm.com/?p=52</guid>
+
+					<description><![CDATA[This is why I love CSS. Now, it will only work in newer browsers, but does look awesome. Roll over it and you&#8217;ll see how they made this, with a variety of CSS circles. You can of course also view the code by right hand clicking and viewing source. This is what I love about<a class="more-link" href="https://peterwm.com/new-twitter-logo-in-pure-css/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p><a href="http://labs.upperdog.se/twitter-logo-in-css/" target="_blank">This is why I love CSS.</a> Now, it will only work in newer browsers, but does look awesome.</p>
+<p>Roll over it and you&#8217;ll see how they made this, with a variety of CSS circles.</p>
+<p>You can of course also view the code by right hand clicking and viewing source. This is what I love about the web, something that makes us really say WOW, in just a hundred odd lines of code.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Double-tagging, or CSS vertical align</title>
+		<link>https://peterwm.com/double-tagging-or-css-vertical-align/</link>
+		
+		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Tue, 22 May 2012 17:44:45 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[align]]></category>
+		<category><![CDATA[CSS]]></category>
+		<category><![CDATA[vertical]]></category>
+		<guid isPermaLink="false">https://peterwm.com/?p=60</guid>
+
+					<description><![CDATA[This is pretty geeky, but I&#8217;ve tried several ways of doing this, and wanted to post what I&#8217;ve found to be the best. And based on testing, it&#8217;s also the most cross-browser compliant solution. The issue is (seemingly) simple. How do you use the equivalent of valign=&#8221;middle&#8221; in CSS? With tables this was pretty simple.<a class="more-link" href="https://peterwm.com/double-tagging-or-css-vertical-align/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p>This is pretty geeky, but I&#8217;ve tried several ways of doing this, and wanted to post what I&#8217;ve found to be the best. And based on testing, it&#8217;s also the most cross-browser compliant solution.</p>
+<p>The issue is (seemingly) simple. How do you use the equivalent of valign=&#8221;middle&#8221; in CSS? With tables this was pretty simple. But we&#8217;ve all moved on from tables for layout. I hope.</p>
+<p>While CSS (including CSS3) does have a vertical-align, you can&#8217;t use it in the same way for you text-align for example. You can&#8217;t simply tell it that all text within a container should sit halfway down the div.</p>
+<p>The way I&#8217;ve found most useful is to double-tag. That is, to use a parent div, and then a child within it.</p>
+<p>Here&#8217;s the code to show what I mean:<br />
+#content1 {<br />
+display:table;<br />
+height:400px;<br />
+}</p>
+<p>#content2 {<br />
+display:table-cell;<br />
+vertical-align:middle;<br />
+}</p>
+<p>And then when writing the HTML:<br />
+&lt;div id=&#8221;content1&#8243;&gt;<br />
+&lt;div id=&#8221;content2&#8243;&gt;<br />
+This text will sit halfway down the div, regardless of whether I have one line of text, or three.<br />
+&lt;/div&gt;<br />
+&lt;/div&gt;</p>
+<p>In essence the first div says &#8220;Go on, act like I&#8217;m a table&#8221;.  And then second continues, &#8220;And let&#8217;s just say I&#8217;m a table cell. Because cells *can* have vertical-align assigned to them!&#8221;</p>
+<p>Double-tagging.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

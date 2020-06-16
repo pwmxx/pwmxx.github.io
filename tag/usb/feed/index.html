@@ -12,37 +12,41 @@
 	<atom:link href="https://peterwm.com/tag/usb/feed/" rel="self" type="application/rss+xml" />
 	<link>https://peterwm.com/</link>
 	<description>Peter Warwick-Mahoney</description>
-	<lastBuildDate>Fri, 09 Nov 2012 14:33:43 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 18 Feb 2016 13:38:26 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.2.3</generator>
+	<generator>https://wordpress.org/?v=5.4.2</generator>
 	<item>
-		<title>Posting USB memory costs more than you think</title>
-		<link>https://peterwm.com/posting-usb-memory-costs-more-than-you-think/</link>
-				<pubDate>Tue, 06 Nov 2012 10:22:07 +0000</pubDate>
+		<title>I was having all kind of trouble installing&#8230;</title>
+		<link>https://peterwm.com/i-was-having-all-kind-of-trouble-installing/</link>
+		
 		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
-				<category><![CDATA[Hints & Tips]]></category>
-		<category><![CDATA[bricks]]></category>
-		<category><![CDATA[memory stick]]></category>
-		<category><![CDATA[post]]></category>
-		<category><![CDATA[post office]]></category>
-		<category><![CDATA[postage]]></category>
-		<category><![CDATA[royal mail]]></category>
+		<pubDate>Thu, 18 Feb 2016 13:38:26 +0000</pubDate>
+				<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[install]]></category>
+		<category><![CDATA[server]]></category>
+		<category><![CDATA[ubuntu]]></category>
 		<category><![CDATA[usb]]></category>
-		<category><![CDATA[usb stick]]></category>
+		<guid isPermaLink="false">http://petermahoney.me/i-was-having-all-kind-of-trouble-installing/</guid>
 
-		<guid isPermaLink="false">https://peterwm.com/?p=177</guid>
-				<description><![CDATA[I&#8217;ve been caught out by this a few times now. Posting a USB memory stick costs more than a regular letter. Many people just pop them in envelopes and stick a standard second class stamp on it, thinking nothing of it. And fair enough, you&#8217;d be forgiven for thinking something so small should count as<a class="more-link" href="https://peterwm.com/posting-usb-memory-costs-more-than-you-think/"> [Continue Reading]</a>]]></description>
-								<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-178" title="usb_stick_royal_mail_post_insufficiant_postage_fee_to_pay" src="https://peterwm.com/wp-content/uploads/2012/11/usb_stick_royal_mail_post_insufficiant_postage_fee_to_pay-150x150.jpg" alt="USB memory stick, Royal Mail insufficiant postage, fee to pay" width="150" height="150" />I&#8217;ve been caught out by this a few times now.</p>
-<p>Posting a USB memory stick costs more than a regular letter. Many people just pop them in envelopes and stick a standard second class stamp on it, thinking nothing of it.</p>
-<p>And fair enough, you&#8217;d be forgiven for thinking something so small should count as a standard letter.</p>
-<p>Sadly, they&#8217;re generally too thick to be accepted that way, and the recipients end up with a small (but annoying) fee to pay at their local Post Office. Easily the most frustrating thing is usually the postage is only 19p short, to which a pound gets added as a handling fee—and thus the Royal Mail makes more on the transaction than it would cost to send the item twice.</p>
-<p>(If you&#8217;re on of the people who has recently fallen foul of this when sending me USB sticks, fret not, I have no plans to come after you! Just to show there are no hard feelings, a few bricks are on their way to you, affixed with a single used stamp from New Zealand. Don&#8217;t get upset with me, they&#8217;re too large to fit through your mail slot so you were always going to have to visit your local Post Office for collection anyway.)</p>
-<p>&nbsp;</p>
+					<description><![CDATA[I was having all kind of trouble installing Ubuntu Server today. I tried writing the disc image to a USB in a variety of ways, but it kept failing at various points of the install, check disks never succeeded, and I couldn&#8217;t help but notice I wasn&#8217;t even seeing a couple of the screens I<a class="more-link" href="https://peterwm.com/i-was-having-all-kind-of-trouble-installing/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p>I was having all kind of trouble installing Ubuntu Server today. I tried writing the disc image to a USB in a variety of ways, but it kept failing at various points of the install, check disks never succeeded, and I couldn&#8217;t help but notice I wasn&#8217;t even seeing a couple of the screens I expected too.</p>
+<p>Over lunch I found this:</p>
+<pre>Due to changes in syslinux, it is not currently possible to use usb-creator from 14.04 and earlier releases to write USB images for 15.04 or later; we believe that it is also not possible to use usb-creator from a 15.04 or later system to write USB images for earlier releases. For now the workaround is to use a matching release of Ubuntu to write the images, but we intend to issue updates soon to work around this incompatibility</pre>
+<p>So the issue was the computer I was creating the USB on wasn&#8217;t compatible with the Ubuntu server image I was creating.</p>
+<p>Here&#8217;s the solution:</p>
+<ol>
+<li>Right click your ubuntu-15.10-desktop-amd64.iso > Open with Disk Image writer</li>
+<li>Choose your usb drive and click Start Restoring&#8230; and follow the instruction.</li>
+</ol>
 ]]></content:encoded>
-										</item>
+					
+		
+		
+			</item>
 	</channel>
 </rss>

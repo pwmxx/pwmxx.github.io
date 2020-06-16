@@ -12,50 +12,67 @@
 	<atom:link href="https://peterwm.com/tag/url/feed/" rel="self" type="application/rss+xml" />
 	<link>https://peterwm.com/</link>
 	<description>Peter Warwick-Mahoney</description>
-	<lastBuildDate>Thu, 08 Aug 2019 01:09:26 +0000</lastBuildDate>
+	<lastBuildDate>Wed, 17 Jul 2013 12:00:09 +0000</lastBuildDate>
 	<language>en-US</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>
 	1	</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=5.2.3</generator>
+	<generator>https://wordpress.org/?v=5.4.2</generator>
 	<item>
-		<title>Top tip: Use Google cache to browse a webpage that&#8217;s down</title>
-		<link>https://peterwm.com/top-tip-use-google-cache-to-browse-a-webpage-thats-down/</link>
-				<pubDate>Tue, 23 Apr 2013 09:28:17 +0000</pubDate>
+		<title>Permanently moving website to a new domain</title>
+		<link>https://peterwm.com/permanently-moving-website-to-a-new-domain/</link>
+					<comments>https://peterwm.com/permanently-moving-website-to-a-new-domain/#comments</comments>
+		
 		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
+		<pubDate>Wed, 17 Jul 2013 12:00:09 +0000</pubDate>
 				<category><![CDATA[Hints & Tips]]></category>
-		<category><![CDATA[cache]]></category>
-		<category><![CDATA[Google]]></category>
-		<category><![CDATA[google cache]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
+		<category><![CDATA[301]]></category>
+		<category><![CDATA[code]]></category>
+		<category><![CDATA[domain]]></category>
+		<category><![CDATA[htaccess]]></category>
+		<category><![CDATA[move address]]></category>
+		<category><![CDATA[redirect]]></category>
 		<category><![CDATA[url]]></category>
+		<guid isPermaLink="false">http://petermahoney.me/?p=875</guid>
 
-		<guid isPermaLink="false">https://peterwm.com/?p=882</guid>
-				<description><![CDATA[I spent ten minutes this morning waiting for a page to load, before remembering about Google cache. Google cache&#8217;s sites when it indexes them, meaning if you want to look at a page that doesn&#8217;t change all that often, you can easily take a look if the original site is down/slow to load. It&#8217;s really<a class="more-link" href="https://peterwm.com/top-tip-use-google-cache-to-browse-a-webpage-thats-down/"> [Continue Reading]</a>]]></description>
-								<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-883" alt="View a webpage on Google cache" src="https://peterwm.com/wp-content/uploads/2013/04/google-cache-150x150.png" width="150" height="150" />I spent ten minutes this morning waiting for a page to load, before remembering about Google cache.</p>
-<p>Google cache&#8217;s sites when it indexes them, meaning if you want to look at a page that doesn&#8217;t change all that often, you can easily take a look if the original site is down/slow to load.</p>
-<p>It&#8217;s really easy. Simply add the URL you want to access (including the http://) after this:</p>
-<blockquote><p>http://webcache.googleusercontent.com/search?q=cache:</p></blockquote>
-<p>So, for example: <a href="http://webcache.googleusercontent.com/search?q=cache:https://peterwm.com/" target="_blank">http://webcache.googleusercontent.com/search?q=cache:https://peterwm.com/</a> will return the latest cached version of my homepage.</p>
-<p>Easy, and useful!</p>
+					<description><![CDATA[You really want to add this to your .htaccess file: Redirect 301 / http://your-new-domain Let&#8217;s break that down. &#8220;Redirect&#8221; is pretty obvious, it tells the web server to redirect the request. &#8220;301&#8221; is a special code that tells any search engines that come by that this change is permanent, and they should update their results<a class="more-link" href="https://peterwm.com/permanently-moving-website-to-a-new-domain/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p>You really want to add this to your .htaccess file:</p>
+<pre>Redirect 301 / http://your-new-domain</pre>
+<p>Let&#8217;s break that down.</p>
+<ul>
+<li>&#8220;Redirect&#8221; is pretty obvious, it tells the web server to redirect the request.</li>
+<li>&#8220;301&#8221; is a special code that tells any search engines that come by that this change is permanent, and they should update their results to reflect the new URL. (Using &#8220;302&#8221; instead would set it as a temporary move.)</li>
+<li>&#8220;/&#8221; just means the entire site, from the very top directory has been moved.</li>
+<li>&#8220;http://your-new-domain&#8221; or indeed, <em>whatever your new URL is,</em> is the new domain that all requests should be sent to. Note the final &#8220;/&#8221; on the end.</li>
+</ul>
+<p>Easy peasy! Now all bookmarks, and search engine results will still be valid and get people to your new address, with one short piece of code.</p>
 ]]></content:encoded>
-										</item>
+					
+					<wfw:commentRss>https://peterwm.com/permanently-moving-website-to-a-new-domain/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
 		<item>
 		<title>Make a &#8220;Share on Twitter&#8221; link with URL and Hashtags</title>
 		<link>https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/</link>
-				<comments>https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/#comments</comments>
-				<pubDate>Tue, 19 Feb 2013 14:42:29 +0000</pubDate>
+					<comments>https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/#comments</comments>
+		
 		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
-				<category><![CDATA[Hints & Tips]]></category>
+		<pubDate>Tue, 19 Feb 2013 14:42:29 +0000</pubDate>
+				<category><![CDATA[Code]]></category>
+		<category><![CDATA[Nerd-stream]]></category>
 		<category><![CDATA[hashtagnerdy]]></category>
 		<category><![CDATA[hastags]]></category>
 		<category><![CDATA[linking to twitter with hashtags]]></category>
 		<category><![CDATA[Twitter]]></category>
 		<category><![CDATA[url]]></category>
-
 		<guid isPermaLink="false">https://peterwm.com/?p=669</guid>
-				<description><![CDATA[This is a little coding trick I get asked about quite a bit. The link you have to make to share something to Twitter is quite simple: http://twitter.com/share?text=text goes here But getting a URL and hastag in there is a different matter. To be honest most developers do know how to include the URL, but<a class="more-link" href="https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/"> [Continue Reading]</a>]]></description>
-								<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-670" title="twitter link sharing code with hastags" src="https://peterwm.com/wp-content/uploads/2013/02/twitter-link-sharing-code-with-hastags.jpg" alt="Twitter link, Twitter sharing code with hastags and URL" width="150" height="150" />This is a little coding trick I get asked about quite a bit.</p>
+
+					<description><![CDATA[This is a little coding trick I get asked about quite a bit. The link you have to make to share something to Twitter is quite simple: http://twitter.com/share?text=text goes here But getting a URL and hastag in there is a different matter. To be honest most developers do know how to include the URL, but<a class="more-link" href="https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/"> [Continue Reading]</a>]]></description>
+										<content:encoded><![CDATA[<p><img class="alignright size-full wp-image-670" title="twitter link sharing code with hastags" src="https://peterwm.com/wp-content/uploads/2013/02/twitter-link-sharing-code-with-hastags.jpg" alt="Twitter link, Twitter sharing code with hastags and URL" width="150" height="150" />This is a little coding trick I get asked about quite a bit.</p>
 <p>The link you have to make to share something to Twitter is quite simple:</p>
 <blockquote><p>http://twitter.com/share?text=text goes here</p></blockquote>
 <p>But getting a URL and hastag in there is a different matter. To be honest most developers do know how to include the URL, but hashtags have proved more elusive!</p>
@@ -64,36 +81,11 @@
 <blockquote><p><a href="http://twitter.com/share?text=Here's an awesome tip!&amp;url=https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/&amp;hashtags=peter,is,awesome" target="_blank">http://twitter.com/share?text=Here&#8217;s an awesome tip!&amp;url=https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/&amp;hashtags=peter,is,awesome</a></p></blockquote>
 <p>And that&#8217;s it!</p>
 ]]></content:encoded>
-							<wfw:commentRss>https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/feed/</wfw:commentRss>
-		<slash:comments>11</slash:comments>
-							</item>
-		<item>
-		<title>10 Youtube URL tricks worth knowing</title>
-		<link>https://peterwm.com/10-youtube-url-tricks-worth-knowing/</link>
-				<pubDate>Wed, 05 Dec 2012 10:27:59 +0000</pubDate>
-		<dc:creator><![CDATA[Peter Warwick-Mahoney]]></dc:creator>
-				<category><![CDATA[Content]]></category>
-		<category><![CDATA[Hints & Tips]]></category>
-		<category><![CDATA[Tools]]></category>
-		<category><![CDATA[User experience]]></category>
-		<category><![CDATA[10]]></category>
-		<category><![CDATA[code]]></category>
-		<category><![CDATA[embed]]></category>
-		<category><![CDATA[tips]]></category>
-		<category><![CDATA[tricks]]></category>
-		<category><![CDATA[url]]></category>
-		<category><![CDATA[youtube]]></category>
-
-		<guid isPermaLink="false">https://peterwm.com/?p=345</guid>
-				<description><![CDATA[So often when I&#8217;m embedding a Youtube clip on a website for a client, I&#8217;m asked to customise it somehow. Now there are a variety of ways this can be done, from removing the &#8220;related videos&#8221; at the end (which I always do for schools, at the American School in London we must have done<a class="more-link" href="https://peterwm.com/10-youtube-url-tricks-worth-knowing/"> [Continue Reading]</a>]]></description>
-								<content:encoded><![CDATA[<p><img class="alignright size-thumbnail wp-image-347" title="youtube_logo" src="https://peterwm.com/wp-content/uploads/2012/12/youtube_logo-150x131.jpg" alt="Youtube logo" width="150" height="131" />So often when I&#8217;m embedding a Youtube clip on a website for a client, I&#8217;m asked to customise it somehow. Now there are a variety of ways this can be done, from removing the &#8220;related videos&#8221; at the end (which I <em>always</em> do for schools, at the American School in London we must have done this a hundred times a month!) to overlaying images on top of the video entirely, (see <a href="http://www.danielwagner.com" target="_blank" rel="noopener noreferrer">danielwagner.com</a> for an example).</p>
-<p>But like so many things online, as long as you know the basics yourself, there&#8217;s a lot you can do with those.</p>
-<p>Just adding little bits of code to the Youtube URL for example can have a big effect.</p>
-<p>Example:</p>
-<blockquote><p>4. Hide the search box</p>
-<p>The search box appears when you hover over an embedded video. To hide the search box add ‘&amp;showsearch=0′ to the embed url.</p></blockquote>
-<p><a href="http://www.makeuseof.com/tag/10-youtube-url-tricks-you-should-know-about/" target="_blank" rel="noopener noreferrer">Here&#8217;s a great list of 10 tricks worth knowing.</a></p>
-]]></content:encoded>
-										</item>
+					
+					<wfw:commentRss>https://peterwm.com/make-a-share-on-twitter-link-with-url-and-hashtags/feed/</wfw:commentRss>
+			<slash:comments>11</slash:comments>
+		
+		
+			</item>
 	</channel>
 </rss>
